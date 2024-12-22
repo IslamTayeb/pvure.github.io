@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pranay Vure - Biomedical Engineering at Duke University">
     <title>Pranay Vure - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -15,7 +19,7 @@
     </header>
 
     <main>
-        <section class="contact-info">
+        <section class="contact-info" id="contact">
             <h2>Contact Information</h2>
             <ul>
                 <li>Email: <a href="mailto:pranay.vure@duke.edu">pranay.vure@duke.edu</a></li>
@@ -24,14 +28,12 @@
             </ul>
         </section>
 
-        <section class="education">
+        <section class="education" id="education">
             <h2>Education</h2>
-            <p><strong>Duke University</strong><br>
-               BS, Biomedical Engineering, Minor in Computational Biology<br>
-               Expected Graduation: May 2025</p>
+            <p><strong>Duke University</strong><br> BS, Biomedical Engineering, Minor in Computational Biology<br> Expected Graduation: May 2025</p>
         </section>
 
-        <section class="research">
+        <section class="research" id="research">
             <h2>Research Interests</h2>
             <ul>
                 <li>Protein Engineering</li>
@@ -41,18 +43,20 @@
             </ul>
         </section>
 
-        <section class="publications">
+        <section class="publications" id="publications">
             <h2>Recent Publications</h2>
             <ul>
-                <li><strong>Vure, P., et al.</strong> IDR-pLM: IDR Ensemble Property Prediction via Protein Language Models. <em>BMES 2024 Conference</em></li>
-                <li><strong>Wang, L., et al.</strong> PepDoRA: A Unified Peptide Language Model. <em>Nature Methods (in review)</em></li>
+                <li><strong>Vure, P., Pulugurta, R., Chen, T., Chatterjee, P.</strong> IDR-pLM: IDR Ensemble Property Prediction via Protein Language Models. <em>BMES 2024 Conference</em></li>
+                <li><strong>Wang, L., Pulugurta, R., Vure, P., Pal, A., Zhang, Y., Chatterjee, P.</strong> PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation. <em>Nature Methods (in review)</em></li>
+                <li><strong>Chen, T., Vure, P., Pulugurta, R., Chatterjee, P.</strong> DPAC: Prediction and Design of Protein-DNA Interactions via Sequence-Based Contrastive Learning. <em>Poster Presentation at MOML @ MIT, 2024</em></li>
             </ul>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <ul>
                 <li><strong>Design of NCAM1 Specific Binders</strong> Towards Neuroendocrine Prostate Cancer Therapy</li>
+                <li><strong>DISTCLIP</strong> Advancing Protein-Protein Interaction Predictions Through Contrastive Learning of Distograms</li>
                 <li><strong>Anti-CRISPRTune</strong> Fine-Tuning ProtGPT2 and ESM-2 for the Generative Design of Anti-CRISPR Proteins</li>
             </ul>
         </section>
@@ -61,5 +65,8 @@
     <footer>
         <p>&copy; 2024 Pranay Vure</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
