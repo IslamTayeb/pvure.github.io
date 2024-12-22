@@ -1,166 +1,63 @@
-
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
-
-div.scroll {
-  background-color: #fed9ff;
-  width: 600px;
-  height: 150px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: center;
-  padding: 20px;
-}
-
-body{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  background: #131313;
-  color: #fff;
-  font-size: 96px;
-  font-family: 'Fira Mono', monospace;
-  letter-spacing: -7px;
-}
-
-div{
-  animation: glitch 1s linear infinite;
-}
-
-@keyframes glitch{
-  2%,64%{
-    transform: translate(2px,0) skew(0deg);
-  }
-  4%,60%{
-    transform: translate(-2px,0) skew(0deg);
-  }
-  62%{
-    transform: translate(0,0) skew(5deg);
-  }
-}
-
-div:before,
-div:after{
-  content: attr(title);
-  position: absolute;
-  left: 0;
-}
-
-div:before{
-  animation: glitchTop 1s linear infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-}
-
-@keyframes glitchTop{
-  2%,64%{
-    transform: translate(2px,-2px);
-  }
-  4%,60%{
-    transform: translate(-2px,2px);
-  }
-  62%{
-    transform: translate(13px,-1px) skew(-13deg);
-  }
-}
-
-div:after{
-  animation: glitchBotom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-}
-
-@keyframes glitchBotom{
-  2%,64%{
-    transform: translate(-2px,0);
-  }
-  4%,60%{
-    transform: translate(-2px,0);
-  }
-  62%{
-    transform: translate(-22px,5px) skew(21deg);
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	 font-family: "Gilroy ExtraBold", system-ui, sans-serif;
-	 font-style: normal;
-	 font-weight: normal;
-	 -webkit-font-smoothing: antialiased;
-	 -webkit-font-kerning: normal;
-	 -webkit-text-size-adjust: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
- html, body {
-	 width: 100vw;
-	 height: 100vh;
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
- body {
-	 background: linear-gradient(45deg, #02001f, #1f1b4e);
-	 transform-style: preserve-3d;
-	 transform: perspective(60rem);
-	 position: fixed;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
+
+header .header-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
- .Menu-list {
-	 font-size: 4.25rem;
-	 line-height: 1.2;
-	 text-transform: uppercase;
-	 text-align: center;
-	 display: flex;
-	 flex-direction: column;
-	 align-items: center;
-	 transform: rotateX(-10deg) rotateY(20deg);
+
+header h1 {
+    font-size: 2.5em;
 }
- .Menu-list-item {
-	 position: relative;
-	 color: transparent;
-	 cursor: pointer;
+
+header p {
+    font-size: 1.2em;
 }
- .Menu-list-item::before {
-	 content: '';
-	 display: block;
-	 position: absolute;
-	 top: 49%;
-	 left: -10%;
-	 right: -10%;
-	 height: 4px;
-	 border-radius: 4px;
-	 margin-top: -2px;
-	 background: #ff2c75;
-	 transform: scale(0);
-	 transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
-	 z-index: 1;
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
 }
- .Mask {
-	 display: block;
-	 position: absolute;
-	 overflow: hidden;
-	 color: #ff2c75;
-	 top: 0;
-	 height: 49%;
-	 transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+
+section {
+    margin-bottom: 30px;
 }
- .Mask span {
-	 display: block;
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
- .Mask + .Mask {
-	 top: 48.9%;
-	 height: 51.1%;
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
- .Mask + .Mask span {
-	 transform: translateY(-49%);
+
+ul li {
+    margin-bottom: 10px;
 }
- .Menu-list-item:hover .Mask, .Menu-list-item:active .Mask {
-	 color: #fff;
-	 transform: skewX(12deg) translateX(5px);
-}
- .Menu-list-item:hover .Mask + .Mask, .Menu-list-item:active .Mask + .Mask {
-	 transform: skewX(12deg) translateX(-5px);
-}
- .Menu-list-item:hover::before, .Menu-list-item:active::before {
-	 transform: scale(1);
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
