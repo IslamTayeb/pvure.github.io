@@ -6,62 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pranay Vure - Biomedical Engineering at Duke University">
     <title>Pranay Vure - Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <div class="header-container">
-            <h1>Pranay Vure</h1>
-            <p>Biomedical Engineering Student at Duke University</p>
-        </div>
+        <nav>
+            <div class="nav-container">
+                <h1>Pranay Vure</h1>
+                <ul>
+                    <li><a href="#biography">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-toggle">
+                    <label for="theme-toggle" class="toggle-label"></label>
+                </div>
+            </div>
+        </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section class="contact-info" id="contact">
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email: <a href="mailto:pranay.vure@duke.edu">pranay.vure@duke.edu</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/pranay-vure-0903641b2/" target="_blank">Pranay Vure</a></li>
-                <li>GitHub: <a href="https://github.com" target="_blank">GitHub Profile</a></li>
-            </ul>
+        <!-- Biography Section -->
+        <section class="biography" id="biography">
+            <div class="bio-container">
+                <h2>Biography</h2>
+                <p>I am a Biomedical Engineering student at Duke University, focusing on Molecular and Cellular Engineering. My research integrates deep learning and generative AI with protein design to develop programmable platforms for proteome engineering.</p>
+                <div class="info-box">
+                    <h3>Education</h3>
+                    <p><strong>Duke University</strong><br>BS, Biomedical Engineering, Minor in Computational Biology<br>Expected Graduation: May 2025</p>
+                </div>
+                <div class="info-box">
+                    <h3>Research Interests</h3>
+                    <ul>
+                        <li>Molecular Engineering</li>
+                        <li>Cellular Engineering</li>
+                        <li>Deep Learning</li>
+                        <li>Protein Design</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="education" id="education">
-            <h2>Education</h2>
-            <p><strong>Duke University</strong><br> BS, Biomedical Engineering, Minor in Computational Biology<br> Expected Graduation: May 2025</p>
-        </section>
-
-        <section class="research" id="research">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Protein Engineering</li>
-                <li>Computational Biology</li>
-                <li>Deep Learning</li>
-                <li>Generative AI</li>
-            </ul>
-        </section>
-
+        <!-- Publications Section -->
         <section class="publications" id="publications">
             <h2>Recent Publications</h2>
-            <ul>
-                <li><strong>Vure, P., Pulugurta, R., Chen, T., Chatterjee, P.</strong> IDR-pLM: IDR Ensemble Property Prediction via Protein Language Models. <em>BMES 2024 Conference</em></li>
-                <li><strong>Wang, L., Pulugurta, R., Vure, P., Pal, A., Zhang, Y., Chatterjee, P.</strong> PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation. <em>Nature Methods (in review)</em></li>
-                <li><strong>Chen, T., Vure, P., Pulugurta, R., Chatterjee, P.</strong> DPAC: Prediction and Design of Protein-DNA Interactions via Sequence-Based Contrastive Learning. <em>Poster Presentation at MOML @ MIT, 2024</em></li>
-            </ul>
+            <div class="info-box">
+                <ul>
+                    <li><strong>Vure, P., Pulugurta, R., Chen, T., Chatterjee, P.</strong> IDR-pLM: IDR Ensemble Property Prediction via Protein Language Models. <em>BMES 2024 Conference</em></li>
+                    <li><strong>Wang, L., Pulugurta, R., Vure, P., Pal, A., Zhang, Y., Chatterjee, P.</strong> PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation. <em>Nature Methods (in review)</em></li>
+                    <li><strong>Chen, T., Vure, P., Pulugurta, R., Chatterjee, P.</strong> DPAC: Prediction and Design of Protein-DNA Interactions via Sequence-Based Contrastive Learning. <em>Poster Presentation at MOML @ MIT, 2024</em></li>
+                    <li><strong>Vincoff, S., Kholina, K., Goel, S., Pulugurta, R., Vure, P., Chatterjee, P.</strong> FusOn-pLM: A Fusion Oncoprotein-Specific Language Model via Focused Probabilistic Masking. <em>Poster Presentation at MOML @ MIT, 2024</em></li>
+                    <li><strong>Chen, T., Vure, P., Pulugurta, R., Chatterjee, P.</strong> AMP-Diffusion: Integrating Latent Diffusion with Protein Language Models for Antimicrobial Peptide Generation. <em>Presented as poster at NeurIPS 2023 GenBio Workshop</em></li>
+                    <li><strong>Chen, T., Pertsemlidis, S., Watson, R., Kavirayuni, V.S, Hsu, A., Vure, P., Pulugurta, R., Vincoff, S., Hong, L., Wang, T., Yudistyra, V., Haarer, E., Zhao, L., Chatterjee, P.</strong> PepMLM: Target Sequence-Conditioned Generation of Therapeutic Peptide Binders via Span Masked Language Modeling. <em>Nature Biotechnology (in review)</em></li>
+                    <li><strong>Bhat, S., Palepu, K., et al., Vure, P., Chatterjee, P.</strong> De Novo Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling. <em>Science Advances (in review)</em></li>
+                    <li><strong>Kapingidza, B., et al., Vure, P., Azoitei, M.L.</strong> Engineered immunogens to elicit antibodies against conserved coronavirus epitopes. <em>Nature Communications 14, 7897 (2023)</em></li>
+                </ul>
+            </div>
         </section>
 
+        <!-- Projects Section -->
         <section class="projects" id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Design of NCAM1 Specific Binders</strong> Towards Neuroendocrine Prostate Cancer Therapy</li>
-                <li><strong>DISTCLIP</strong> Advancing Protein-Protein Interaction Predictions Through Contrastive Learning of Distograms</li>
-                <li><strong>Anti-CRISPRTune</strong> Fine-Tuning ProtGPT2 and ESM-2 for the Generative Design of Anti-CRISPR Proteins</li>
-            </ul>
+            <div class="info-box">
+                <ul>
+                    <li><strong>Design of NCAM1 Specific Binders</strong> Towards Neuroendocrine Prostate Cancer Therapy</li>
+                    <li><strong>DISTCLIP</strong> Advancing Protein-Protein Interaction Predictions Through Contrastive Learning of Distograms</li>
+                    <li><strong>Anti-CRISPRTune</strong> Fine-Tuning ProtGPT2 and ESM-2 for the Generative Design of Anti-CRISPR Proteins</li>
+                    <li><strong>Modeling Effects of Humalog and Ozempic on Glucose and Insulin Dynamics in Healthy & Type 2 Diabetes Patients</strong></li>
+                    <li><strong>Developing a Biocompatible Polymer Capable of Delivering Intrasynovial Drugs for the Treatment of Gout</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <h2>Experience</h2>
+            <div class="info-box">
+                <h3>Teaching Assistant - Department of Biomedical Engineering, Duke University</h3>
+                <p><strong>BME 221: Biomaterials</strong>, Summer 2024</p>
+                <p><strong>Department of Innovation & Entrepreneurship, Duke University</strong>, Course Instructor, HOUSECS 59: Venture Launchpad: From Idea to Impact, Spring 2024</p>
+                <p><strong>Department of Computer Science, Duke University</strong>, Teaching Assistant, CS240: Race, Gender, Class, & Computing, Fall 2022, Spring 2023, Fall 2023</p>
+            </div>
+            <div class="info-box">
+                <h3>Professional Experience</h3>
+                <h4>Data Science/R&D Intern, Medtronic</h4>
+                <p><strong>Summer 2024</strong></p>
+                <ul>
+                    <li>Quantified sympathetic control of the renal vasculature via time-series analysis of arterial temperature, impedance, and pressure blood flow signals.</li>
+                    <li>Developed an indicator to predict the efficacy/success of renal denervation treatments.</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h4>Founding Engineer, Valinor Discovery</h4>
+                <p><strong>Summer 2024 - Present</strong></p>
+                <ul>
+                    <li>Worked closely with the CEO to build an ML platform to identify and validate drug targets for systemic organ aging.</li>
+                    <li>Secured several hundred thousand dollars in angel investments to validate the platform and develop a perturbation model for aging-related disease pathways.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:pranay.vure@duke.edu">pranay.vure@duke.edu</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/pranay-vure-0903641b2/" target="_blank">Pranay Vure</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">GitHub Profile</a></p>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Pranay Vure</p>
     </footer>
